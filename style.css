@@ -209,7 +209,7 @@ footer {
   font-size: 31px;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1200px) {
+@media screen and (min-width: 600px) {
   /*na tablet*/
   .only-mobile {
     display: none;
@@ -255,7 +255,7 @@ footer {
     height: 38vw;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   /*na desktop*/
   .container {
     margin: 0 auto;
@@ -268,22 +268,13 @@ footer {
     padding: 13px 90px 16px 94px;
   }
   ul {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-  li a {
-    color: #ffffff;
-    font-size: 18px;
-    line-height: 21px;
-    text-decoration: none;
-    display: block;
+    gap: 0;
   }
   .left {
     font-weight: 700;
   }
   .spacer {
+    display: list-item;
     flex: 1;
   }
   .right {
@@ -292,8 +283,12 @@ footer {
   #inactive {
     cursor: not-allowed;
   }
+  .center {
+    align-items: initial;
+  }
   h2 {
     width: 55%;
+    text-align: left;
   }
   .slogan {
     width: 30%;
