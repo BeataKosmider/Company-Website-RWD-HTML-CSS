@@ -5,8 +5,6 @@ body {
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
 .container {
   width: 95vw;
   margin: 0 auto;
@@ -53,7 +51,7 @@ h3 {
   justify-content: center;
 }
 .banner {
-  background: url(106-1920x1080-blur_5.jpeg) no-repeat;
+  background: url(assets/106-1920x1080-blur_5.jpeg) no-repeat;
   background-size: cover;
   height: calc(100vh - 50px);
 }
@@ -70,8 +68,7 @@ h3 {
   display: flex;
   align-items: center;
   color: #ffffff;
-  margin-top: 63px;
-  margin-bottom: 57px;
+  margin: 63px 0 57px;
 }
 .button {
   border: 3px solid #ffffff;
@@ -107,24 +104,17 @@ h3 {
 }
 .photo1 {
   background-color: #c4c4c4;
-  background-image: url(mloda-kobieta-w-ciazy-z-dlugimi-ciemnymi-wlosami-w-tropikalnej-lokalizacji_1321-4055.jpg);
+  background-image: url(assets/mloda-kobieta-w-ciazy-z-dlugimi-ciemnymi-wlosami-w-tropikalnej-lokalizacji_1321-4055.jpg);
 }
 .photo2 {
   background-color: #907d7d;
-  background-image: url(young-man-working-on-laptop-next-to-his-bike.jpg);
+  background-image: url(assets/young-man-working-on-laptop-next-to-his-bike.jpg);
 }
 .text {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.text1 {
-  width: 100%;
-  text-align: justify;
-}
-.text2 {
+  margin: 50px 0;
   width: 100%;
   text-align: justify;
 }
@@ -193,7 +183,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 38px 0px 42px 0px;
+  padding: 38px 0 42px;
 }
 .copyright {
   display: flex;
@@ -238,6 +228,9 @@ footer {
   .spacer {
     display: none;
   }
+  #inactive {
+    cursor: not-allowed;
+  }
   .center {
     align-items: center;
   }
@@ -280,9 +273,6 @@ footer {
   .right {
     margin-right: 46px;
   }
-  #inactive {
-    cursor: not-allowed;
-  }
   .center {
     align-items: initial;
   }
@@ -314,14 +304,13 @@ footer {
   .text {
     margin-top: 78px;
     margin-bottom: 0px;
+    width: 73%;
   }
   .text1 {
-    width: 73%;
     text-align: left;
     margin-left: 60px;
   }
   .text2 {
-    width: 73%;
     text-align: right;
     margin-right: 60px;
   }
